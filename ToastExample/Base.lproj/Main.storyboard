@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CiG-1d-S13">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpo-WG-3du">
+                                <rect key="frame" x="150" y="86" width="75" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Top Toast"/>
+                                <connections>
+                                    <action selector="showTopToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjc-p2-sJD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8I-8F-YYc">
+                                <rect key="frame" x="32" y="317" width="76" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Left Toast"/>
+                                <connections>
+                                    <action selector="showLeftToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoC-SI-f7d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ro1-Ax-lAc">
+                                <rect key="frame" x="257" y="317" width="86" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Right Toast"/>
+                                <connections>
+                                    <action selector="showRightToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lE-7T-Udq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQm-eU-bXR">
+                                <rect key="frame" x="32" y="594" width="107" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title=" Bottom Toast"/>
+                                <connections>
+                                    <action selector="showBottomToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MJ-iP-ESs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgZ-iH-7lC">
+                                <rect key="frame" x="237" y="594" width="106" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Custom Toast"/>
+                                <connections>
+                                    <action selector="makeBurntToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMP-wb-HT1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPn-yo-NeO">
+                                <rect key="frame" x="105" y="516" width="164" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Blocking Toast">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBlockingToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ElZ-Xb-L6h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-AW-ruD">
+                                <rect key="frame" x="114" y="462" width="146" height="30"/>
+                                <state key="normal" title="View Controller Toast"/>
+                                <connections>
+                                    <action selector="makeVCToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygQ-HJ-0Uk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cpo-WG-3du" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BO3-w3-5Xm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iQm-eU-bXR" secondAttribute="bottom" constant="40" id="CK6-fN-8gs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ro1-Ax-lAc" secondAttribute="trailing" constant="32" id="JLm-8e-1OH"/>
+                            <constraint firstItem="Ro1-Ax-lAc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="LKG-SO-Ghp"/>
+                            <constraint firstItem="hhM-AW-ruD" firstAttribute="centerX" secondItem="JPn-yo-NeO" secondAttribute="centerX" id="Lvq-36-hAW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D8I-8F-YYc" secondAttribute="trailing" constant="20" symbolic="YES" id="Qmc-Q3-kcm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GgZ-iH-7lC" secondAttribute="bottom" constant="40" id="R1m-sA-Cv7"/>
+                            <constraint firstItem="Cpo-WG-3du" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="U2S-YY-Tif"/>
+                            <constraint firstItem="iQm-eU-bXR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="X6q-sB-ofz"/>
+                            <constraint firstItem="Ro1-Ax-lAc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xdc-X6-fGA"/>
+                            <constraint firstItem="D8I-8F-YYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="dxo-d6-CTK"/>
+                            <constraint firstItem="iQm-eU-bXR" firstAttribute="top" secondItem="JPn-yo-NeO" secondAttribute="bottom" constant="38" id="efz-3w-7IQ"/>
+                            <constraint firstItem="GgZ-iH-7lC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="hnP-Oz-CZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GgZ-iH-7lC" secondAttribute="trailing" constant="32" id="oW2-uO-aBw"/>
+                            <constraint firstItem="JPn-yo-NeO" firstAttribute="top" secondItem="hhM-AW-ruD" secondAttribute="bottom" constant="24" id="sIt-QQ-Adl"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iQm-eU-bXR" secondAttribute="trailing" constant="20" symbolic="YES" id="tMg-M0-Ffs"/>
+                            <constraint firstItem="JPn-yo-NeO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wPS-8a-YsR"/>
+                            <constraint firstItem="D8I-8F-YYc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wxw-o8-UOh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zrM-Ia-IXL">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="Bjs-09-bmo">
+                            <connections>
+                                <action selector="makePaletteToast:" destination="BYZ-38-t0r" id="ZXc-tn-gEC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Hide Toast" id="dgC-gC-gm5">
+                            <connections>
+                                <action selector="hideToast:" destination="BYZ-38-t0r" id="RHp-Hk-2GR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="-564.46776611694156"/>
+        </scene>
+        <!--Progress View Controller-->
+        <scene sceneID="hK4-ao-YzX">
+            <objects>
+                <viewController storyboardIdentifier="ProgressViewController" id="03r-nJ-F2O" customClass="ProgressViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KdF-Xx-Sym">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwp-59-6Sd">
+                                <rect key="frame" x="16" y="39.5" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZYS-Cl-o6t">
+                                <rect key="frame" x="104" y="49" width="255" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="100" id="fJc-Ru-hDb"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bKb-a7-NAa" firstAttribute="trailing" secondItem="ZYS-Cl-o6t" secondAttribute="trailing" constant="16" id="HDo-S1-K3t"/>
+                            <constraint firstItem="pwp-59-6Sd" firstAttribute="centerY" secondItem="KdF-Xx-Sym" secondAttribute="centerY" id="bqD-o8-qt7"/>
+                            <constraint firstItem="ZYS-Cl-o6t" firstAttribute="leading" secondItem="pwp-59-6Sd" secondAttribute="trailing" constant="15" id="dVI-QN-hud"/>
+                            <constraint firstItem="ZYS-Cl-o6t" firstAttribute="centerY" secondItem="KdF-Xx-Sym" secondAttribute="centerY" id="iJV-M4-JVr"/>
+                            <constraint firstItem="pwp-59-6Sd" firstAttribute="leading" secondItem="bKb-a7-NAa" secondAttribute="leading" constant="16" id="yOy-85-xNe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bKb-a7-NAa"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="100"/>
+                    <connections>
+                        <outlet property="progressBar" destination="ZYS-Cl-o6t" id="Mud-YU-Jfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTq-SU-ExD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.8" y="-567.16641679160421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qv6-j4-JC6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CiG-1d-S13" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="khL-5j-SlE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BKU-1U-1oQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mph-C7-l4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>
