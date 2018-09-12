@@ -16,6 +16,7 @@
 		033122D12145F7B000FD0756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033122CE2145F7B000FD0756 /* Main.storyboard */; };
 		033122D32145F7D800FD0756 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033122D22145F7D800FD0756 /* Toast.swift */; };
 		037A23C321499CFB0069874B /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A23C221499CFB0069874B /* ProgressViewController.swift */; };
+		037A23C52149AA1B0069874B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 037A23C42149AA1B0069874B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		033122CF2145F7B000FD0756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		033122D22145F7D800FD0756 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		037A23C221499CFB0069874B /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		037A23C42149AA1B0069874B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		033122A32145F6FB00FD0756 = {
 			isa = PBXGroup;
 			children = (
+				037A23C42149AA1B0069874B /* README.md */,
 				033122D42145F7E200FD0756 /* Toast */,
 				033122AE2145F6FB00FD0756 /* ToastExample */,
 				033122AD2145F6FB00FD0756 /* Products */,
@@ -147,6 +150,7 @@
 			files = (
 				033122BA2145F6FC00FD0756 /* LaunchScreen.storyboard in Resources */,
 				033122D02145F7B000FD0756 /* PaletteToast.xib in Resources */,
+				037A23C52149AA1B0069874B /* README.md in Resources */,
 				033122B72145F6FC00FD0756 /* Assets.xcassets in Resources */,
 				033122D12145F7B000FD0756 /* Main.storyboard in Resources */,
 			);
