@@ -8,16 +8,28 @@
 
 import UIKit
 
+/*
+ * The type of switch shown in the palette.
+ */
 enum PaletteSwitchType {
     case temporary, sizeToFit, centered, swipeToDismiss
 }
 
+/*
+ * The delegate will be called when switches are thrown or when other
+ * changes occur.
+ */
 protocol PaletteDelegate: class {
     func initialValues() -> [PaletteSwitchType:Bool]
     func switchThrown(type: PaletteSwitchType, isOn: Bool) -> Void
     func closePalette() -> Void
 }
 
+/*
+ * The Palette is an example of using a UIView that's loaded from a XIB as
+ * a Toast. This class manages the UIView and uses a delegate to keep the
+ * main controller informed.
+ */
 class Palette: UIView {
     
     @IBOutlet var temporarySwitch: UISwitch!
@@ -48,14 +60,6 @@ class Palette: UIView {
             }
         }
     }
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     
     @IBAction func switchThrown(_ sender: UISwitch) {
         switch sender.tag {

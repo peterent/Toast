@@ -8,10 +8,26 @@
 
 import UIKit
 
+/*
+ * Implement this delegate to be informed when the progress
+ * has changed.
+ */
 protocol ProgressViewDelegate: class {
     func progressComplete() -> Void
 }
 
+/*
+ * The ProgressViewController manages a progress indicator. This illustates how a
+ * UIViewController can be used as a Toast. When an instance of this UIViewController
+ * is attached to a Toast, the UIView it manages becomes the visible Toast that's
+ * popped up. Because sizing a UIView like this can be tricky, you can use the Toast's
+ * maximumContentSize property to help. If, for example, this UIViewController is to
+ * be a bottom-side Toast, then maximumContentSize determine's the UIView's height.
+ *
+ * All this example does is start a timer to change the progress bar and notify the
+ * delegate when progress has reached 1.0. It is up to the delegate to dismiss the Toast.
+ *
+ */
 class ProgressViewController: UIViewController {
     
     @IBOutlet var progressBar: UIProgressView!
