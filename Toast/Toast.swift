@@ -391,7 +391,7 @@ public final class Toast: NSObject {
     public class func quick(_ parentViewController: UIViewController, message: String, options: [ToastOptions: Any]? = nil) {
         let toast = Toast(message: message, options: options)
         toast.options[.isTemporary] = true
-        if options![.lingerInterval] == nil {
+        if options?[.lingerInterval] == nil {
             toast.options[.lingerInterval] = 0.5
         }
         toast.present(parentViewController)

@@ -133,6 +133,18 @@ class ViewController: UIViewController, ToastDelegate, PaletteDelegate, Progress
         }
     }
     
+    @IBAction func makeDatePickerToast(_ sender:Any?) {
+        guard activeToast == nil else {
+            return
+        }
+        
+        activeToast = DatePickerToast.present(self, delegate: self, selectedDate: nil)
+    }
+    
+    @objc func closeDatePicker(_ sender:Any?) {
+        activeToast?.dismiss()
+    }
+    
     // MARK: - ProgressViewDelegate
     
     func progressComplete() {
@@ -183,6 +195,14 @@ class ViewController: UIViewController, ToastDelegate, PaletteDelegate, Progress
         toast.present(self)
         
         activeToast = toast
+    }
+}
+
+extension ViewController: DatePickerToastDelegate {
+    
+    func datePickerSelected(date: Date) {
+        print("Selected the date: \(date)")
+        activeToast?.dismiss()
     }
 }
 
