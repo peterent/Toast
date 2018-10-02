@@ -18,7 +18,6 @@
 		037A23C321499CFB0069874B /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A23C221499CFB0069874B /* ProgressViewController.swift */; };
 		037A23C52149AA1B0069874B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 037A23C42149AA1B0069874B /* README.md */; };
 		037A23C72149B0B10069874B /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 037A23C62149B0B10069874B /* LICENSE.md */; };
-		03B5FDA4215A966600675E53 /* DatePickerToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5FDA3215A966600675E53 /* DatePickerToast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		037A23C221499CFB0069874B /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		037A23C42149AA1B0069874B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		037A23C62149B0B10069874B /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		03B5FDA3215A966600675E53 /* DatePickerToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 				033122C22145F75D00FD0756 /* Palette.swift */,
 				033122C32145F75D00FD0756 /* ViewController.swift */,
 				037A23C221499CFB0069874B /* ProgressViewController.swift */,
-				03B5FDA3215A966600675E53 /* DatePickerToast.swift */,
 				033122CE2145F7B000FD0756 /* Main.storyboard */,
 				033122CC2145F7B000FD0756 /* PaletteToast.xib */,
 				033122B82145F6FC00FD0756 /* LaunchScreen.storyboard */,
@@ -175,7 +172,6 @@
 				033122D32145F7D800FD0756 /* Toast.swift in Sources */,
 				033122C72145F75E00FD0756 /* ViewController.swift in Sources */,
 				033122C62145F75E00FD0756 /* Palette.swift in Sources */,
-				03B5FDA4215A966600675E53 /* DatePickerToast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

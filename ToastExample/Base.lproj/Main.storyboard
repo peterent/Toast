@@ -75,17 +75,9 @@
                                     <action selector="makeVCToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygQ-HJ-0Uk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocF-Uq-Tad">
-                                <rect key="frame" x="129.5" y="413" width="116" height="30"/>
-                                <state key="normal" title="DatePicker Toast"/>
-                                <connections>
-                                    <action selector="makeDatePickerToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hz2-ZA-9bg"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ocF-Uq-Tad" firstAttribute="centerX" secondItem="hhM-AW-ruD" secondAttribute="centerX" id="2Zz-DN-i6J"/>
                             <constraint firstItem="Cpo-WG-3du" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BO3-w3-5Xm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iQm-eU-bXR" secondAttribute="bottom" constant="40" id="CK6-fN-8gs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ro1-Ax-lAc" secondAttribute="trailing" constant="32" id="JLm-8e-1OH"/>
@@ -101,7 +93,6 @@
                             <constraint firstItem="GgZ-iH-7lC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="hnP-Oz-CZG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GgZ-iH-7lC" secondAttribute="trailing" constant="32" id="oW2-uO-aBw"/>
                             <constraint firstItem="JPn-yo-NeO" firstAttribute="top" secondItem="hhM-AW-ruD" secondAttribute="bottom" constant="24" id="sIt-QQ-Adl"/>
-                            <constraint firstItem="hhM-AW-ruD" firstAttribute="top" secondItem="ocF-Uq-Tad" secondAttribute="bottom" constant="19" id="suM-tf-TV2"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iQm-eU-bXR" secondAttribute="trailing" constant="20" symbolic="YES" id="tMg-M0-Ffs"/>
                             <constraint firstItem="JPn-yo-NeO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wPS-8a-YsR"/>
                             <constraint firstItem="D8I-8F-YYc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wxw-o8-UOh"/>

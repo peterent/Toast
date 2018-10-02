@@ -60,6 +60,9 @@ public enum ToastOptions {
     // Bool: if true (default), swiping will dismiss a Toast. Swipe in the direction of the Toast's side (eg, down for a bottom Toast).
     case allowsSwipeToDismiss
     
+    // Bool: if true (default), tapping outside of the Toast (on the screen), dismisses the Toast.
+    case allowsTapToDismiss
+    
     // Bool: if true (default), a, isCentered=true Toast will have a drop shadow.
     case showShadow
     
@@ -141,6 +144,7 @@ public final class Toast: NSObject {
         .dismissInterval: 0.25,
         .isBlockingInputBlurry: false,
         .allowsSwipeToDismiss: true,
+        .allowsTapToDismiss: true,
         .showShadow: true,
         .blockInteractionBackgroundColor: UIColor(red:0, green:0, blue:0, alpha: 0.20),
         .minimumContentDimension: CGFloat(40.0),
@@ -217,6 +221,11 @@ public final class Toast: NSObject {
     private var allowsSwipeToDismiss: Bool {
         get {
             return options[.allowsSwipeToDismiss] as! Bool
+        }
+    }
+    private var allowsTapToDismiss: Bool {
+        get {
+            return options[.allowsTapToDismiss] as! Bool
         }
     }
     private var showShadow: Bool {
@@ -474,8 +483,15 @@ public final class Toast: NSObject {
         
         let addGesture = {(direction:UISwipeGestureRecognizerDirection) in
             guard self.allowsSwipeToDismiss else { return }
-            let gesture = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipe(_:)))
+            let gesture = UISwipeGestureRecognizer(target: self, action: #selector(self.handleDismissGesture(_:)))
             gesture.direction = direction
+            self.screen.addGestureRecognizer(gesture)
+        }
+        
+        if allowsTapToDismiss {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(self.handleDismissGesture(_:)))
+            gesture.numberOfTapsRequired = 1
+            gesture.numberOfTouchesRequired = 1
             self.screen.addGestureRecognizer(gesture)
         }
         
@@ -560,7 +576,7 @@ public final class Toast: NSObject {
         actualViewSize = frameWidth
     }
     
-    @objc private func handleSwipe(_ gesture:UISwipeGestureRecognizer) {
+    @objc private func handleDismissGesture(_ gesture:Any) {
         dismiss()
     }
 }
